@@ -2,11 +2,11 @@
   "users": [
     {
       "id": 1,
-      "name": "Tatay Owner",
-      "email": "owner@bodega.com",
+      "name": "Store Owner",
+      "email": "owner@example.com",
       "role": "owner",
       "roleLabel": "Owner",
-      "avatar": "TO",
+      "avatar": "SO",
       "permissions": [
         "can_approve_po",
         "can_view_reports",
@@ -22,7 +22,7 @@
     {
       "id": 2,
       "name": "Juan Manager",
-      "email": "manager@bodega.com",
+      "email": "manager@example.com",
       "role": "manager",
       "roleLabel": "Manager",
       "avatar": "JM",
@@ -40,7 +40,7 @@
     {
       "id": 3,
       "name": "Maria Stock",
-      "email": "stock@bodega.com",
+      "email": "stock@example.com",
       "role": "stock_personnel",
       "roleLabel": "Stock Personnel",
       "avatar": "MS",
@@ -1119,7 +1119,7 @@
       "user_id": 2,
       "type": "po_approved",
       "title": "PO Approved",
-      "message": "Your PO-20260603-003 has been approved by Tatay Owner",
+      "message": "Your PO-20260603-003 has been approved by Store Owner",
       "reference_id": 3,
       "reference_type": "purchase_order",
       "is_read": true,
@@ -1164,7 +1164,7 @@
   "receive_requests": [],
   "csv_import_sessions": [],
   "settings": {
-    "app_name": "Bodega ni Tatay",
+    "app_name": "Procurement & Inventory System",
     "version": "1.0.0",
     "pro_enabled": false
   }

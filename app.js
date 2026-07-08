@@ -1,5 +1,5 @@
 /* ============================================
-   BODEGA NI TATAY - PROCUREMENT SYSTEM
+   PROCUREMENT & INVENTORY SYSTEM
    JSON Data + Pro Mode
    ============================================ */
 
@@ -43,10 +43,10 @@ async function initApp() {
         appData = await response.json();
 
         // Load pro mode from localStorage
-        isProEnabled = localStorage.getItem('bodega_pro_mode') === 'true';
+        isProEnabled = localStorage.getItem('procurement_pro_mode') === 'true';
 
         // Load any saved mutations from localStorage
-        const saved = localStorage.getItem('bodega_data');
+        const saved = localStorage.getItem('procurement_data');
         if (saved) {
             try {
                 const savedData = JSON.parse(saved);
@@ -85,8 +85,8 @@ function saveAppData() {
      'csv_import_sessions','settings'].forEach(key => {
         if (appData[key] !== undefined) dataToSave[key] = appData[key];
     });
-    localStorage.setItem('bodega_data', JSON.stringify(dataToSave));
-    localStorage.setItem('bodega_pro_mode', isProEnabled);
+    localStorage.setItem('procurement_data', JSON.stringify(dataToSave));
+    localStorage.setItem('procurement_pro_mode', isProEnabled);
 }
 
 function updateProUI() {
