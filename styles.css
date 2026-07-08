@@ -1,5 +1,5 @@
 /* ============================================
-   BODEGA NI TATAY - PROCUREMENT SYSTEM
+   PROCUREMENT & INVENTORY SYSTEM
    Stylesheet (with Pro Mode & CSV Import)
    ============================================ */
 
@@ -233,7 +233,7 @@ textarea.form-control { resize: vertical; min-height: 80px; }
 /* ============================================
    APP LAYOUT
    ============================================ */
-#app-screen { display: flex; flex-direction: column; min-height: 100vh; }
+#app-screen { display: none; flex-direction: column; min-height: 100vh; }
 
 /* Header */
 .app-header {
